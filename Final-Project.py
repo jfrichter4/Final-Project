@@ -7,43 +7,43 @@ Question = input("Is your GPA weighted or unweighted?")
 Then = input("Okay - I understand. Enter your grades in this form: 100; 95; 33")
 """
 J = 1
-ForNow = input("Enter your first grade here. If you have an A, enter: A. If you have an A-, enter: A-. If you have a B+, enter B+.     ")
-After = input("Type 'Y' if you have another grade and if not, type something else.    ")
-if After == "Y":
+ForNow = input("Enter your first grade here. Follow this guide to know what each grade equates to: ").lower()
+After = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+if After == "y":
     J = 2
-    A = input("Enter your next grade!   ")
-    Q = input("Type 'Y' if you have another grade and if not, type something else.    ")
-    if Q == "Y":
+    A = input("Enter your next grade!   ").lower()
+    Q = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+    if Q == "y":
         J = 3
-        B = input("Enter your next grade!   ")
-        Z = input("Type 'Y' if you have another grade and if not, type something else.    ")
-        if Z == "Y":
+        B = input("Enter your next grade!   ").lower()
+        Z = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+        if Z == "y":
             J = 4
-            C = input("Enter your next grade!   ")
-            Y = input("Type 'Y' if you have another grade and if not, type something else.    ")
-            if Y == "Y":
+            C = input("Enter your next grade!   ").lower()
+            Y = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+            if Y == "y":
                 J = 5
-                D = input("Enter your next grade!   ")
-                X = input("Type 'Y' if you have another grade and if not, type something else.    ")
-                if X == "Y":
+                D = input("Enter your next grade!   ").lower()
+                X = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                if X == "y":
                     J = 6
-                    E = input("Enter your next grade!   ")
-                    W = input("Type 'Y' if you have another grade and if not, type something else.    ")
-                    if W == "Y":
+                    E = input("Enter your next grade!   ").lower()
+                    W = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                    if W == "y":
                         J = 7
-                        I = input("Enter your next grade!   ")
-                        V = input("Type 'Y' if you have another grade and if not, type something else.    ")
-                        if V == "Y":
+                        I = input("Enter your next grade!   ").lower()
+                        V = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                        if V == "y":
                             J = 8
-                            F = input("Enter your next grade!   ")
-                            U = input("Type 'Y' if you have another grade and if not, type something else.    ")
-                            if U == "Y":
+                            F = input("Enter your next grade!   ").lower()
+                            U = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                            if U == "y":
                                 J = 9
-                                G = input("Enter your next grade!   ")
-                                T = input("Type 'Y' if you have another grade and if not, type something else.    ")
-                                if T == "Y":
+                                G = input("Enter your next grade!   ").lower()
+                                T = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                                if T == "y":
                                     J = 10
-                                    H = input("Enter your next grade!   ")
+                                    H = input("Enter your next grade!   ").lower()
 elif After == "N":
     print("Thanks!")
 """
@@ -55,9 +55,24 @@ Zip3 = zip(Zip1, Zip2)
 
 Total = sum("A", "B", "C", "D", "E", "F", "G", "H")
 """
-Total = {"A+":4, "A":4, "A-":3.67, "B+":3.33, "B":3, "B-":2.67, "C+":2.33, "C":2, "C-":1.67, "D+":1.33, "D":1, "D-":0.67, "F+":0.33, "F":0, "F-":0, "U":0, "N/A":0}
-
-Final = sum(Total)
+if ForNow ==... :
+    Final = sum(ForNow)
+    if A == True:
+        Final = sum(ForNow, A)
+        if B == True:
+            Final = sum(ForNow, A, B)
+            if C == True:
+                Final = sum(ForNow, A, B, C)
+                if D == True:
+                    Final = sum(ForNow, A, B, C, D)
+                    if E == True:
+                        Final = sum(ForNow, A, B, C, D, E)
+                        if F == True:
+                            Final = sum(ForNow, A, B, C, D, E, F)
+                            if G == True:
+                                Final = sum(ForNow, A, B, C, D, E, F)
+                                if H == True:
+                                    Final = sum(ForNow, A, B, C, D, E, F, G, H)
 Printed = Final/J
 if Final > 3.7:
     print("You are above average - your GPA is " + Printed + "!")
