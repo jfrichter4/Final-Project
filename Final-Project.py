@@ -6,12 +6,38 @@ print("Welcome to the Oversimplified GPA Calc!")
 Question = input("Is your GPA weighted or unweighted?")
 Then = input("Okay - I understand. Enter your grades in this form: 100; 95; 33")
 """
+A=0
+B=0
+C=0
+D=0
+E=0
+F=0
+G=0
+H=0
+I=0
+J=0
+K=0
+L=0
+M=0
+N=0
+O=0
+P=0
+Q=0
+R=0
+S=0
+T=0
+U=0
+V=0
+W=0
+X=0
+Y=0
+Z=0
 J = 1
-ForNow = input("Enter your first grade here. Follow this guide to know what each grade equates to: ").lower()
-After = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+ForNow = int(input("Enter your first grade here. Follow this guide to know what each grade equates to:      "))
+After = input("Type 'Y' if you have another grade and if not, type something else.      ").lower()
 if After == "y":
     J = 2
-    A = input("Enter your next grade!   ").lower()
+    A = int(input("Enter your next grade!   "))
     Q = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
     if Q == "y":
         J = 3
@@ -55,28 +81,28 @@ Zip3 = zip(Zip1, Zip2)
 
 Total = sum("A", "B", "C", "D", "E", "F", "G", "H")
 """
-if ForNow ==... :
-    Final = sum(ForNow)
-    if A == True:
-        Final = sum(ForNow, A)
-        if B == True:
-            Final = sum(ForNow, A, B)
-            if C == True:
-                Final = sum(ForNow, A, B, C)
-                if D == True:
-                    Final = sum(ForNow, A, B, C, D)
-                    if E == True:
-                        Final = sum(ForNow, A, B, C, D, E)
-                        if F == True:
-                            Final = sum(ForNow, A, B, C, D, E, F)
-                            if G == True:
-                                Final = sum(ForNow, A, B, C, D, E, F)
-                                if H == True:
-                                    Final = sum(ForNow, A, B, C, D, E, F, G, H)
+if len(str(ForNow)) == 3 or 2 or 1:
+    Final = (ForNow)
+    if len(str(A)) == 3 or 2 or 1:
+        Final = ((ForNow) + (A))
+        if len(str(B)) == 3 or 2 or 1:
+            Final = ((ForNow) + (A) + (B))
+            if len(str(C)) == 3 or 2 or 1:
+                Final = ((ForNow) + (A) + (B) + (C))
+                if len(str(D)) == 3 or 2 or 1:
+                    Final = ((ForNow) + (A) + (B) + (C) + (D))
+                    if len(str(E)) == 3 or 2 or 1:
+                        Final = ((ForNow) + (A) + (B) + (C) + (D) + (E))
+                        if len(str(F)) == 3 or 2 or 1:
+                            Final = ((ForNow) + (A) + (B) + (C) + (D) + (E) + (F))
+                            if len(str(G)) == 3 or 2 or 1:
+                                Final = ((ForNow) + (A) + (B) + (C) + (D) + (E) + (F) + (G))
+                                if len(str(H)) == 3 or 2 or 1:
+                                    Final = ((ForNow) + (A) + (B) + (C) + (D) + (E) + (F) + (G) + (H))
 Printed = Final/J
-if Final > 3.7:
-    print("You are above average - your GPA is " + Printed + "!")
-if Final < 3.7:
+if Printed > 3.7:
+    print("You are above average - your GPA is {0}!".format(Printed))
+if Printed < 3.7:
     print("You are below average - your GPA is " + Printed + "!")
 
 """
