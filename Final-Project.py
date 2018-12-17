@@ -35,10 +35,58 @@ Z=0
 J = 1
 ForNow = int(input("Enter your first grade here. Follow this guide to know what each grade equates to:      "))
 After = input("Type 'Y' if you have another grade and if not, type something else.      ").lower()
+if ForNow > 92.49:
+    ForNow = 4/4
+elif ForNow > 89.49:
+    ForNow = 3.67/4
+elif ForNow > 86.49:
+    ForNow = 3.33/4
+elif ForNow > 82.49:
+    ForNow = 3/4
+elif ForNow > 79.49:
+    ForNow = 2.67/4
+elif ForNow > 76.49:
+    ForNow = 2.33/4
+elif ForNow > 72.49:
+    ForNow = 2/4
+elif ForNow > 69.49:
+    ForNow = 1.67/4
+elif ForNow > 66.49:
+    ForNow = 1.33/4
+elif ForNow > 62.49:
+    ForNow = 1/4
+elif ForNow > 59.49:
+    ForNow = .67/4
+else ForNow <= 59.49:
+    ForNow = .00/4
 if After == "y":
     J = 50
     A = int(input("Enter your next grade!   "))
-    Q = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+    Q = input("Type 'Y' if you have another grade and if not, type something else.").lower()
+    if A > 92.49:
+    A = 4/4
+    elif A > 89.49:
+            A = 3.67/4
+    elif A > 86.49:
+        A = 3.33/4
+    elif A > 82.49:
+        A = 3/4
+    elif A > 79.49:
+        A = 2.67/4
+    elif A > 76.49:
+        A = 2.33/4
+    elif A > 72.49:
+        A = 2/4
+    elif ForNow > 69.49:
+        ForNow = 1.67/4
+    elif ForNow > 66.49:
+        ForNow = 1.33/4
+    elif ForNow > 62.49:
+        ForNow = 1/4
+    elif ForNow > 59.49:
+        ForNow = .67/4
+    else ForNow <= 59.49:
+        ForNow = .00/4
     if Q == "y":
         J = 75
         B = int(input("Enter your next grade!   "))
@@ -80,7 +128,7 @@ Zip2 = (4, 4, 3.67, 3.33, 3, 2.67, 2.33, 2, 1.67, 1.33, 1, .67, .33, 0)
 Zip3 = zip(Zip1, Zip2)
 
 Total = sum("A", "B", "C", "D", "E", "F", "G", "H")
-"""
+
 if len(str(ForNow)) == 3 or 2 or 1:
     Final = (ForNow)
     if len(str(A)) == 3 or 2 or 1:
@@ -100,6 +148,7 @@ if len(str(ForNow)) == 3 or 2 or 1:
                                 if len(str(H)) == 3 or 2 or 1:
                                     Final = ((ForNow) + (A) + (B) + (C) + (D) + (E) + (F) + (G) + (H))
 Printed = Final/J
+"""
 if Printed > 3.7:
     print("You are above average - your GPA is {0}!".format(Printed))
 if Printed < 3.7:
