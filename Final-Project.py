@@ -36,40 +36,40 @@ J = 1
 ForNow = int(input("Enter your first grade here. Follow this guide to know what each grade equates to:      "))
 After = input("Type 'Y' if you have another grade and if not, type something else.      ").lower()
 if After == "y":
-    J = 2
+    J = 50
     A = int(input("Enter your next grade!   "))
     Q = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
     if Q == "y":
-        J = 3
-        B = input("Enter your next grade!   ").lower()
+        J = 75
+        B = int(input("Enter your next grade!   "))
         Z = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
         if Z == "y":
-            J = 4
-            C = input("Enter your next grade!   ").lower()
+            J = 100
+            C = int(input("Enter your next grade!   "))
             Y = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
             if Y == "y":
-                J = 5
-                D = input("Enter your next grade!   ").lower()
+                J = 125
+                D = int(input("Enter your next grade!   "))
                 X = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
                 if X == "y":
-                    J = 6
-                    E = input("Enter your next grade!   ").lower()
+                    J = 150
+                    E = int(input("Enter your next grade!   "))
                     W = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
                     if W == "y":
-                        J = 7
-                        I = input("Enter your next grade!   ").lower()
+                        J = 175
+                        I = int(input("Enter your next grade!   "))
                         V = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
                         if V == "y":
-                            J = 8
-                            F = input("Enter your next grade!   ").lower()
+                            J = 200
+                            F = int(input("Enter your next grade!   "))
                             U = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
                             if U == "y":
-                                J = 9
-                                G = input("Enter your next grade!   ").lower()
+                                J = 225
+                                G = int(input("Enter your next grade!   "))
                                 T = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
                                 if T == "y":
-                                    J = 10
-                                    H = input("Enter your next grade!   ").lower()
+                                    J = 250
+                                    H = int(input("Enter your next grade!   "))
 elif After == "N":
     print("Thanks!")
 """
@@ -103,7 +103,7 @@ Printed = Final/J
 if Printed > 3.7:
     print("You are above average - your GPA is {0}!".format(Printed))
 if Printed < 3.7:
-    print("You are below average - your GPA is " + Printed + "!")
+    print("You are below average - your GPA is {0}!".format(Printed))
 
 """
 Now, make a zip list compiling A:4,A-:3.67, etc,.
