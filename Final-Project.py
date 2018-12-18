@@ -57,8 +57,8 @@ elif ForNow > 62.49:
     ForNow = 1/4
 elif ForNow > 59.49:
     ForNow = .67/4
-else ForNow <= 59.49:
-    ForNow = .00/4
+else ForNow:
+    ForNow = 0.00/4
 if After == "y":
     J = 50
     A = int(input("Enter your next grade!   "))
@@ -77,48 +77,240 @@ if After == "y":
         A = 2.33/4
     elif A > 72.49:
         A = 2/4
-    elif ForNow > 69.49:
-        ForNow = 1.67/4
-    elif ForNow > 66.49:
-        ForNow = 1.33/4
-    elif ForNow > 62.49:
-        ForNow = 1/4
-    elif ForNow > 59.49:
-        ForNow = .67/4
-    else ForNow <= 59.49:
-        ForNow = .00/4
+    elif A > 69.49:
+        A = 1.67/4
+    elif A > 66.49:
+        A = 1.33/4
+    elif A > 62.49:
+        A = 1/4
+    elif A > 59.49:
+        A = .67/4
+    else A <= 59.49:
+        A = .00/4
     if Q == "y":
         J = 75
         B = int(input("Enter your next grade!   "))
         Z = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+        if B > 92.49:
+            B = 4/4
+        elif B > 89.49:
+            B = 3.67/4
+        elif B > 86.49:
+            B = 3.33/4
+        elif B > 82.49:
+            B = 3/4
+        elif B > 79.49:
+            B = 2.67/4
+        elif B > 76.49:
+            B = 2.33/4
+        elif B > 72.49:
+            B = 2/4
+        elif B > 69.49:
+            B = 1.67/4
+        elif B > 66.49:
+            B = 1.33/4
+        elif B > 62.49:
+            B = 1/4
+        elif B > 59.49:
+            B = .67/4
+        else B <= 59.49:
+            B = .00/4
         if Z == "y":
             J = 100
             C = int(input("Enter your next grade!   "))
             Y = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+            if C > 92.49:
+                C = 4/4
+            elif C > 89.49:
+                C = 3.67/4
+            elif C > 86.49:
+                C = 3.33/4
+            elif C > 82.49:
+                C = 3/4
+            elif C > 79.49:
+                C = 2.67/4
+            elif C > 76.49:
+                C = 2.33/4
+            elif C > 72.49:
+                C = 2/4
+            elif C > 69.49:
+                C = 1.67/4
+            elif C > 66.49:
+                C = 1.33/4
+            elif C > 62.49:
+                C = 1/4
+            elif C > 59.49:
+                C = .67/4
+            else C <= 59.49:
+                C = .00/4
             if Y == "y":
                 J = 125
                 D = int(input("Enter your next grade!   "))
                 X = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                if A > 92.49:
+                    A = 4/4
+                elif A > 89.49:
+                    A = 3.67/4
+                elif A > 86.49:
+                    A = 3.33/4
+                elif A > 82.49:
+                    A = 3/4
+                elif A > 79.49:
+                    A = 2.67/4
+                elif A > 76.49:
+                    A = 2.33/4
+                elif A > 72.49:
+                    A = 2/4
+                elif ForNow > 69.49:
+                    ForNow = 1.67/4
+                elif ForNow > 66.49:
+                    ForNow = 1.33/4
+                elif ForNow > 62.49:
+                    ForNow = 1/4
+                elif ForNow > 59.49:
+                    ForNow = .67/4
+                else ForNow <= 59.49:
+                    ForNow = .00/4
                 if X == "y":
                     J = 150
                     E = int(input("Enter your next grade!   "))
                     W = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                    if A > 92.49:
+                        A = 4/4
+                    elif A > 89.49:
+                        A = 3.67/4
+                    elif A > 86.49:
+                        A = 3.33/4
+                    elif A > 82.49:
+                        A = 3/4
+                    elif A > 79.49:
+                        A = 2.67/4
+                    elif A > 76.49:
+                        A = 2.33/4
+                    elif A > 72.49:
+                        A = 2/4
+                    elif ForNow > 69.49:
+                        ForNow = 1.67/4
+                    elif ForNow > 66.49:
+                        ForNow = 1.33/4
+                    elif ForNow > 62.49:
+                        ForNow = 1/4
+                    elif ForNow > 59.49:
+                        ForNow = .67/4
+                    else ForNow <= 59.49:
+                        ForNow = .00/4
                     if W == "y":
                         J = 175
                         I = int(input("Enter your next grade!   "))
                         V = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                        if A > 92.49:
+                            A = 4/4
+                        elif A > 89.49:
+                            A = 3.67/4
+                        elif A > 86.49:
+                            A = 3.33/4
+                        elif A > 82.49:
+                            A = 3/4
+                        elif A > 79.49:
+                            A = 2.67/4
+                        elif A > 76.49:
+                            A = 2.33/4
+                        elif A > 72.49:
+                            A = 2/4
+                        elif ForNow > 69.49:
+                            ForNow = 1.67/4
+                        elif ForNow > 66.49:
+                            ForNow = 1.33/4
+                        elif ForNow > 62.49:
+                            ForNow = 1/4
+                        elif ForNow > 59.49:
+                            ForNow = .67/4
+                        else ForNow <= 59.49:
+                            ForNow = .00/4
                         if V == "y":
                             J = 200
                             F = int(input("Enter your next grade!   "))
                             U = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                            if A > 92.49:
+                                A = 4/4
+                            elif A > 89.49:
+                                A = 3.67/4
+                            elif A > 86.49:
+                                A = 3.33/4
+                            elif A > 82.49:
+                                A = 3/4
+                            elif A > 79.49:
+                                A = 2.67/4
+                            elif A > 76.49:
+                                A = 2.33/4
+                            elif A > 72.49:
+                                A = 2/4
+                            elif ForNow > 69.49:
+                                ForNow = 1.67/4
+                            elif ForNow > 66.49:
+                                ForNow = 1.33/4
+                            elif ForNow > 62.49:
+                                ForNow = 1/4
+                            elif ForNow > 59.49:
+                                ForNow = .67/4
+                            else ForNow <= 59.49:
+                                ForNow = .00/4
                             if U == "y":
                                 J = 225
                                 G = int(input("Enter your next grade!   "))
                                 T = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                                if A > 92.49:
+                                    A = 4/4
+                                elif A > 89.49:
+                                    A = 3.67/4
+                                elif A > 86.49:
+                                    A = 3.33/4
+                                elif A > 82.49:
+                                    A = 3/4
+                                elif A > 79.49:
+                                    A = 2.67/4
+                                elif A > 76.49:
+                                    A = 2.33/4
+                                elif A > 72.49:
+                                    A = 2/4
+                                elif ForNow > 69.49:
+                                    ForNow = 1.67/4
+                                elif ForNow > 66.49:
+                                    ForNow = 1.33/4
+                                elif ForNow > 62.49:
+                                    ForNow = 1/4
+                                elif ForNow > 59.49:
+                                    ForNow = .67/4
+                                else ForNow <= 59.49:
+                                    ForNow = .00/4
                                 if T == "y":
                                     J = 250
                                     H = int(input("Enter your next grade!   "))
-elif After == "N":
+                                    if A > 92.49:
+                                        A = 4/4
+                                    elif A > 89.49:
+                                        A = 3.67/4
+                                    elif A > 86.49:
+                                        A = 3.33/4
+                                    elif A > 82.49:
+                                        A = 3/4
+                                    elif A > 79.49:
+                                        A = 2.67/4
+                                    elif A > 76.49:
+                                        A = 2.33/4
+                                    elif A > 72.49:
+                                        A = 2/4
+                                    elif ForNow > 69.49:
+                                        ForNow = 1.67/4
+                                    elif ForNow > 66.49:
+                                        ForNow = 1.33/4
+                                    elif ForNow > 62.49:
+                                        ForNow = 1/4
+                                    elif ForNow > 59.49:
+                                        ForNow = .67/4
+                                    else ForNow <= 59.49:
+                                        ForNow = .00/4
+elif After == "n":
     print("Thanks!")
 """
 Zip1 = zip((A:100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50)
