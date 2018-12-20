@@ -342,12 +342,26 @@ if len(str(ForNow)) == 3 or 2 or 1:
                                     if len(str(I)) == 3 or 2 or 1:
                                         Final = ((ForNow) + (A) + (B) + (C) + (D) + (E) + (F) + (G) + (H) + (I))
 Printed = Final/J
-
+class Yay(Sprite):
+    asset = ImageAsset("images/Congratulations.gif")
+    width = 600
+    height = 600
+    def __init__(self, position):
+        super().__init__(Yay.asset, position)
+        self.fxcenter = 0.5
+        self.fycenter = -1.0
 if Printed > 3.7:
     print("You are above average - your GPA is {0}!".format(Printed))
 if Printed < 3.7:
     print("You are below average - your GPA is {0}!".format(Printed))
-
+class SimpleGPA(App):
+    def __init__(self, width, height):
+        super().__init__(width, height)
+    def step(self):
+        for GPA in self.getSpritesbyClass(Yay):
+            GPA.step()
+myapp = SimpleGPA(SW, SH)
+myapp.run()
 """
 Now, make a zip list compiling A:4,A-:3.67, etc,.
 Then, have something with <Question> that makes the code know what weighted means and what unweighted means.
