@@ -6,6 +6,12 @@ print("Welcome to the Oversimplified GPA Calc!")
 Question = input("Is your GPA weighted or unweighted?")
 Then = input("Okay - I understand. Enter your grades in this form: 100; 95; 33")
 """
+SW = 500
+SH = 500
+from ggame import App, Sprite, ImageAsset, Frame
+from ggame import SoundAsset, Sound, TextAsset, Color
+import math
+from time import time
 A=0
 B=0
 C=0
@@ -344,8 +350,8 @@ if len(str(ForNow)) == 3 or 2 or 1:
 Printed = Final/J
 class Yay(Sprite):
     asset = ImageAsset("images/Congratulations.gif")
-    width = 600
-    height = 600
+    width = 500
+    height = 500
     def __init__(self, position):
         super().__init__(Yay.asset, position)
         self.fxcenter = 0.5
@@ -360,7 +366,7 @@ class SimpleGPA(App):
     def step(self):
         for GPA in self.getSpritesbyClass(Yay):
             GPA.step()
-myapp = SimpleGPA(SW, SH)
+myapp = SimpleGPA(SW,SH)
 myapp.run()
 """
 Now, make a zip list compiling A:4,A-:3.67, etc,.
