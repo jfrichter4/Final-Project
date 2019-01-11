@@ -340,10 +340,10 @@ if len(str(ForNow)) == 3 or 2 or 1:
                                     if len(str(I)) == 3 or 2 or 1:
                                         Final = ((ForNow) + (A) + (B) + (C) + (D) + (E) + (F) + (G) + (H) + (I))
 Printed = Final/J
-if Printed >= 3.7:
-    printed = TextAsset("Congratulations! Your GPA is above the HHS average of 3.7. Your GPA is {0}!".format(Printed), style="bold 15pt Times New Roman", width=10000000)
+if Printed >= 3.58:
+    printed = TextAsset("Congratulations! Your GPA is above the HHS average of 3.58. Your GPA is {0}!".format(Printed), style="bold 15pt Times New Roman", width=10000000)
     Sprite(printed, (0, 0))
-if Printed < 3.7:
+if Printed < 3.58:
     printed = TextAsset("Failure! Your GPA is {0}!".format(Printed), style="bold 15pt Times New Roman", width=1000000000000)
     Sprite(printed, (0, 0))
 myapp = App()
