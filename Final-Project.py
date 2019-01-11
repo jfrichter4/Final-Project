@@ -69,7 +69,7 @@ else:
 if After == "y":
     J = 2
     A = int(input("Enter your next grade!   "))
-    Q = input("Type 'Y' if you have another grade and if not, type something else.      ").lower()
+    Q = input("Type 'Y', or something else:      ").lower()
     if A > 92.49:
         A = 4 
     elif A > 89.49:
@@ -97,7 +97,7 @@ if After == "y":
     if Q == "y":
         J = 3
         B = int(input("Enter your next grade!   "))
-        Z = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+        Z = input("Type 'Y', or something else:    ").lower()
         if B > 92.49:
             B = 4 
         elif B > 89.49:
@@ -125,7 +125,7 @@ if After == "y":
         if Z == "y":
             J = 4
             C = int(input("Enter your next grade!   "))
-            Y = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+            Y = input("Type 'Y', or something else:    ").lower()
             if C > 92.49:
                 C = 4 
             elif C > 89.49:
@@ -153,7 +153,7 @@ if After == "y":
             if Y == "y":
                 J = 5
                 D = int(input("Enter your next grade!   "))
-                X = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                X = input("Type 'Y', or something else:    ").lower()
                 if D > 92.49:
                     D = 4 
                 elif D > 89.49:
@@ -181,7 +181,7 @@ if After == "y":
                 if X == "y":
                     J = 6
                     E = int(input("Enter your next grade!   "))
-                    W = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                    W = input("Type 'Y', or something else:    ").lower()
                     if E > 92.49:
                         E = 4 
                     elif E > 89.49:
@@ -209,7 +209,7 @@ if After == "y":
                     if W == "y":
                         J = 7
                         F = int(input("Enter your next grade!   "))
-                        V = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                        V = input("Type 'Y', or something else:    ").lower()
                         if F > 92.49:
                             F = 4 
                         elif F > 89.49:
@@ -237,7 +237,7 @@ if After == "y":
                         if V == "y":
                             J = 8
                             G = int(input("Enter your next grade!   "))
-                            U = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                            U = input("Type 'Y', or something else:    ").lower()
                             if G > 92.49:
                                 G = 4 
                             elif G > 89.49:
@@ -265,7 +265,7 @@ if After == "y":
                             if U == "y":
                                 J = 9
                                 H = int(input("Enter your next grade!   "))
-                                T = input("Type 'Y' if you have another grade and if not, type something else.    ").lower()
+                                T = input("Type 'Y', or something else:    ").lower()
                                 if H > 92.49:
                                     H = 4 
                                 elif H > 89.49:
@@ -340,11 +340,23 @@ if len(str(ForNow)) == 3 or 2 or 1:
                                     if len(str(I)) == 3 or 2 or 1:
                                         Final = ((ForNow) + (A) + (B) + (C) + (D) + (E) + (F) + (G) + (H) + (I))
 Printed = Final/J
-if Printed >= 3.58:
-    printed = TextAsset("Congratulations! Your GPA is above the HHS average of 3.58. Your GPA is {0}!".format(Printed), style="bold 15pt Times New Roman", width=10000000)
+if Printed >= 3.93:
+    printed = TextAsset("Congratulations! Your GPA is within the top 10% of HHS students! Your GPA is {0}!".format(Printed), style="bold 15pt Times New Roman", width=10000000)
     Sprite(printed, (0, 0))
-if Printed < 3.58:
-    printed = TextAsset("Failure! Your GPA is {0}!".format(Printed), style="bold 15pt Times New Roman", width=1000000000000)
+elif Printed >= 3.87:
+    printed = TextAsset("Good Job! Your GPA is within the top 20% of HHS students. Your GPA is {0}.".format(Printed), style="bold 15pt Times New Roman", width=10000000)
+    Sprite(printed, (0, 0))
+elif Printed >= 3.8:
+    printed = TextAsset("Fair. Your GPA is within the top 30% of HHS students. Your GPA is {0}.".format(Printed), style="bold 15pt Times New Roman", width=10000000)
+    Sprite(printed, (0, 0))
+elif Printed >= 3.68:
+    printed = TextAsset("Alright... Your GPA is within the top 40% of HHS students. Your GPA is {0}.".format(Printed), style="bold 15pt Times New Roman", width=10000000)
+    Sprite(printed, (0, 0))
+elif Printed >= 3.58:
+    printed = TextAsset("Okay... Your GPA is above the HHS average of 3.58. Your GPA is {0}!".format(Printed), style="bold 15pt Times New Roman", width=10000000)
+    Sprite(printed, (0, 0))
+elif Printed < 3.58:
+    printed = TextAsset("Failure! Your GPA is below the HHS average of 3.58 - it's {0}!".format(Printed), style="bold 15pt Times New Roman", width=1000000000000)
     Sprite(printed, (0, 0))
 myapp = App()
 myapp.run()
